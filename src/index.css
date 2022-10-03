@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+/* home page */
+.containordiv{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+}
+.maindiv{
+  border-radius: 10px;
+  border: 1px solid gray;
+  overflow: hidden;
+  margin: 10px 0;
+  width: 17rem;
+  height: fit-content;
+}
+ 
+ 
+.imgdiv{
+  width: 100%;
+  overflow: hidden;
+  height: 16rem;
+}
+.imgdiv img{
+  width: 100%;
+  height: 100%;
+}
+.contentdiv{
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 21vh;
+}
+.title{
+    
+   height: 12vh;
+   overflow: hidden;
+   font-size: 15px;
+   font-weight:bold;
+}
+.readmore{
+  justify-self: flex-end;
+  text-decoration: none;
+}
+ 
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+ 
+
+ 
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  margin: 20px;
+      font-size: 70px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* home page*/
+/* navbar */
+
+.Navbar{
+  display:  flex;
+  justify-content: space-between;
+  color: black;
+  background-color:#ebf0f5;
+   align-items: center;
+   padding: 5px 15px;
+   flex-wrap: wrap;
+}
+.logoname{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  
+}
+.linksdiv{
+    
+   width: 40vw;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navlinks{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+.hamburger-menu{
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu > a{
+  color: black;
+}
+@media(max-width:800px){
+  
+    .containordiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+       
+    }
+  
+   .maindiv{
+    height: fit-content;
+    flex-basis: 45%;
+    height: fit-content;
+   }
+    
+.imgdiv{
+  width: 100%;
+  overflow: hidden;
+  height: 14rem;
+}
+.imgdiv img{
+  width:100%;
+  height: 16rem;
+}
+.contentdiv{
+   
+   margin: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 21vh;
+}
+   
+  .linksdiv{
+    display: none;
+  }
+  .linksdiv-mobile{
+ 
+    box-shadow: 10px 10px 8px 10px #888888;
+    position: absolute;
+    display: flex;
+     flex-direction: column;
+    background-color: white;
+    top: 75px;
+    width: 98%;
+    left: 1px;
+    border-radius: 15px;
+    border-left: 1px solid grey;
+   
+  }
+  .navlinks{
+   
+    color: black;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+   
+  }
+  .active-mobile{
+    
+     border-radius: 10px;
+   color: black;
+    background-color: white;
+  }
+  .timegreet{
+    display: none;
+  }
+   
+  .hamburger-menu{
+    
+    display: block;
+    font-size: 2rem;
+  }
+  .animate-charcter{
+    font-size: 3rem;
+  }
+   
+  .coin-volume{
+    display: none;
+  }
+  .coin-marketcap{
+    display: none;
+  }
+  .coin-data{
+    margin-left: 30px;
+  }
+  .coin-row{
+    border: 1px solid black;
+    width: 90vw;
+  }
+  
+  .tag{display: none;}
+}
+.active{
+ transition: 1s;
+ color: blue;
+ 
+}
+ 
+ .timegreet{
+  text-align: center;
+ }
+.greet{
+  text-align: center;
+  align-items: flex-start;
+  color: black;
+}
+.time{
+    font-size: 15px;
+   align-items: center;
+   display: block;
+   margin-top: 3px;
+   color: black;
+}
+.greet:hover, .logo:hover, .logoname:hover,.time:hover {
+    cursor: pointer;
+    transition: 0.2s;
+   color: rgb(129, 129, 129);
+} 
+/* navbar */
+.spinner{
+ text-align: center;
+ margin-top: 20px;
+}
+/* news page */
+.containor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  margin: 10px;
+  justify-content: center;
+  
+}
+.column{
+  flex-wrap: wrap;
+  width: 20%;
+}
+
+/* news page */
+/* crypro page */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+ 
+}
+
+.coin-search {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.coin-input {
+  padding-left: 16px;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(  rgb(68, 184, 223),rgb(206, 181, 213));
+  /*background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+
+ */
+}
+ 
+/* crypto page */
+/* coin page */
+
+
+
+.coin-container {
+ display: flex;
+ justify-content: space-between;
+  border-bottom: 0.5px solid rgb(213, 212, 212);
+
+}
+.cointag-div{
+  width: 70vw;
+  display: flex;
+ justify-content: space-evenly;
+ margin: 10px;
+}
+.tag{
+ 
+  font-size: 20px;
+  font-weight: bold;
+}
+.coindiv{
+  margin-left: 80px;
+}
+.otherdiv{
+  display: flex;
+  width: 42vw;
+  justify-content: space-evenly;
+}
+ 
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  overflow: hidden;
+}
+.coin-row:hover{
+ transition: 0.5s;
+  background-color: rgb(249, 249, 249);
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  width: 300px;
+  justify-content: center;
+}
+.coin-rank{
+   margin-top: 15px;
+ margin-right: 15px;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 5vw;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-data {
+  
+  display: flex;
+ width: 40vw;
+  justify-content: center;
+   
+}
+
+.coin-price {
+  width: 120px;
+}
+
+.coin-volume {
+  width: 155px;
+}
+
+.coin-marketcap {
+  width: 180px;
+}
+
+.coin-percent {
+  width: 100px;
+  
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
+}
+/* coin page */
